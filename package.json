@@ -1,0 +1,9 @@
+{
+  "name": "gd-level-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Geometry Dash level maker web app",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

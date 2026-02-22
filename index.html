@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Dash Level Maker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Geometry Dash Level Maker</h1>
+      <p class="lead">Choose your settings, upload music, and export a generated <code>.gmd</code> level file.</p>
+
+      <form id="level-form" class="card">
+        <label>
+          Level name
+          <input id="level-name" type="text" placeholder="My Sync Challenge" required maxlength="60" />
+        </label>
+
+        <label>
+          Difficulty
+          <select id="difficulty" required>
+            <option value="easy">Easy</option>
+            <option value="normal">Normal</option>
+            <option value="hard">Hard</option>
+            <option value="harder">Harder</option>
+            <option value="insane">Insane</option>
+            <option value="demon">Demon</option>
+          </select>
+        </label>
+
+        <label>
+          Length
+          <select id="length" required>
+            <option value="short">Short (30s)</option>
+            <option value="medium">Medium (60s)</option>
+            <option value="long">Long (120s)</option>
+            <option value="xl">XL (180s)</option>
+          </select>
+        </label>
+
+        <label>
+          Music file (mp3 / wav)
+          <input id="music" type="file" accept="audio/*" required />
+        </label>
+
+        <button type="submit">Generate .gmd file</button>
+      </form>
+
+      <section class="card output">
+        <h2>Generation log</h2>
+        <pre id="log">No level generated yet.</pre>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
