@@ -1,0 +1,34 @@
+{
+  "id": "stellar-striker",
+  "title": "Stellar Striker",
+  "short_description": "Arcade space survival with neon visuals.",
+  "long_description": "Pilot a modular interceptor through procedurally generated asteroid arenas and survive escalating enemy waves.",
+  "version": "1.2.0",
+  "developer": "Orbit Forge",
+  "publisher": "Orbit Forge",
+  "tags": ["arcade", "space", "singleplayer"],
+  "genres": ["Arcade", "Shooter"],
+  "banner_image": "data/images/stellar-banner.jpg",
+  "thumbnail_image": "data/images/stellar-thumb.jpg",
+  "icon_image": "data/images/stellar-icon.png",
+  "install_dir_name": "StellarStriker",
+  "github_repo": "example/stellar-striker",
+  "release_tag": "v1.2.0",
+  "assets": [
+    {
+      "file_name": "stellar-striker-win64.zip",
+      "url": "https://github.com/example/stellar-striker/releases/download/v1.2.0/stellar-striker-win64.zip"
+    }
+  ],
+  "archive_type": "zip",
+  "multipart": false,
+  "executable_relative_path": "StellarStriker.exe",
+  "launch_arguments": [],
+  "install_size": "2.1 GB",
+  "install_size_bytes": 2254857830,
+  "download_size": "1.3 GB",
+  "preserve_paths_on_uninstall": ["Saves"],
+  "release_notes": "Season 2 boss rush and controller remap improvements.",
+  "featured": true,
+  "visibility": true
+}
