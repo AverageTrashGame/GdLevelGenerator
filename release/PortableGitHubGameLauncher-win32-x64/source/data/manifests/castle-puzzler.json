@@ -1,0 +1,38 @@
+{
+  "id": "castle-puzzler",
+  "title": "Castle Puzzler",
+  "short_description": "Story puzzle adventure with handcrafted chapters.",
+  "long_description": "Solve mechanical room puzzles and discover hidden secrets through ten narrative chapters.",
+  "version": "0.9.4",
+  "developer": "North Lantern",
+  "publisher": "North Lantern",
+  "tags": ["puzzle", "story", "indie"],
+  "genres": ["Puzzle", "Adventure"],
+  "banner_image": "https://picsum.photos/900/280",
+  "thumbnail_image": "https://picsum.photos/300/180",
+  "icon_image": "https://picsum.photos/64/64",
+  "install_dir_name": "CastlePuzzler",
+  "github_repo": "example/castle-puzzler",
+  "release_tag": "v0.9.4",
+  "assets": [
+    {
+      "file_name": "castle-puzzler-win64.7z.001",
+      "url": "https://github.com/example/castle-puzzler/releases/download/v0.9.4/castle-puzzler-win64.7z.001"
+    },
+    {
+      "file_name": "castle-puzzler-win64.7z.002",
+      "url": "https://github.com/example/castle-puzzler/releases/download/v0.9.4/castle-puzzler-win64.7z.002"
+    }
+  ],
+  "archive_type": "7z",
+  "multipart": true,
+  "executable_relative_path": "CastlePuzzler.exe",
+  "launch_arguments": ["--safe-mode"],
+  "install_size": "4.8 GB",
+  "install_size_bytes": 5153960755,
+  "download_size": "3.2 GB",
+  "preserve_paths_on_uninstall": ["UserData", "Saves"],
+  "release_notes": "Added chapter 10 and polished localization.",
+  "featured": false,
+  "visibility": true
+}

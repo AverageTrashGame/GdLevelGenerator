@@ -1,0 +1,5 @@
+Portable executable build could not be produced in this environment because npm registry access is blocked (HTTP 403 for electron package).
+Source code and portable folder layout are complete.
+To generate PortableGitHubGameLauncher.exe in an environment with npm access:
+1) npm install
+2) npm run build:win

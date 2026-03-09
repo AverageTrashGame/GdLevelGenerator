@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PortableGitHubGameLauncher Manifest",
+  "type": "object",
+  "required": ["id", "title", "version", "assets", "archive_type", "install_dir_name", "executable_relative_path"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "short_description": { "type": "string" },
+    "long_description": { "type": "string" },
+    "version": { "type": "string" },
+    "developer": { "type": "string" },
+    "publisher": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "genres": { "type": "array", "items": { "type": "string" } },
+    "banner_image": { "type": "string" },
+    "thumbnail_image": { "type": "string" },
+    "icon_image": { "type": "string" },
+    "install_dir_name": { "type": "string" },
+    "github_repo": { "type": "string" },
+    "release_tag": { "type": "string" },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["file_name", "url"],
+        "properties": {
+          "file_name": { "type": "string" },
+          "url": { "type": "string" },
+          "checksum": { "type": "string" }
+        }
+      }
+    },
+    "archive_type": { "enum": ["zip", "7z"] },
+    "multipart": { "type": "boolean" },
+    "executable_relative_path": { "type": "string" },
+    "launch_arguments": { "type": "array", "items": { "type": "string" } },
+    "install_size": { "type": "string" },
+    "install_size_bytes": { "type": "number" },
+    "download_size": { "type": "string" },
+    "preserve_paths_on_uninstall": { "type": "array", "items": { "type": "string" } },
+    "release_notes": { "type": "string" },
+    "featured": { "type": "boolean" },
+    "visibility": { "type": "boolean" }
+  }
+}
